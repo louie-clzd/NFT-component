@@ -11,7 +11,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://louie-clzd.github.io/NFT-component/)
+- Live Site URL: (https://louie-clzd.github.io/NFT-component/)
 
 ### Built with
 
