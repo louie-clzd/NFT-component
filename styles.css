@@ -46,11 +46,13 @@ span {
   height: 300px;
   border-radius: 10px;
   background-color: rgba(0, 255, 255, 0.327);
-  z-index: -1;
+  opacity: 0%;
+  transition: all 0.3s;
 }
 
-.nft-img:hover + .hide {
-  z-index: 1;
+.hide:hover {
+  opacity: 100%;
+  cursor: pointer;
 }
 
 .desc-container {
