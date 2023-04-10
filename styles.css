@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: hsl(217, 54%, 11%);
+}
+
+h1,
+p,
+span {
+  font-size: 18px;
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 350px;
+  background-color: hsl(216, 50%, 16%);
+  align-items: center;
+  padding: 25px 20px 20px;
+  border-radius: 15px;
+}
+
+.nft-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.hide {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  background-color: rgba(0, 255, 255, 0.327);
+  z-index: -1;
+}
+
+.nft-img:hover + .hide {
+  z-index: 1;
+}
+
+.desc-container {
+  align-self: flex-start;
+  margin-left: 0.5em;
+}
+
+.nft-title {
+  font-size: 24px;
+  color: white;
+  padding-top: 6px;
+}
+
+.nft-title:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+.nft-desc {
+  width: 300px;
+  padding-top: 16px;
+  color: hsl(215, 51%, 70%);
+  line-height: 1.7rem;
+  font-weight: 300;
+}
+
+.price-exp {
+  display: flex;
+  justify-content: space-between;
+  gap: 90px;
+  margin-top: -2px;
+}
+
+.eth-price {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 400;
+  color: hsl(178, 100%, 50%);
+}
+
+.bid-exp {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+
+hr.horizontal {
+  border-top: 0.05px solid #ffffff09;
+  width: 95%;
+  margin: -4px;
+}
+
+.creator-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+}
+
+.creator-img {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  margin-left: -26px;
+}
+
+.creator,
+.creator-name {
+  font-weight: 300;
+}
+
+.creator {
+  color: hsl(215, 51%, 70%);
+  padding-left: 10px;
+}
+
+.creator-name {
+  color: #fff;
+}
+
+.creator-name:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+@media screen and (max-width: 450px) {
+  .container {
+    margin-top: -20vh;
+  }
+}
